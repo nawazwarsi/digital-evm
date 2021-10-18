@@ -12,7 +12,9 @@
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
+h4.headertekst {
+  text-align: center;
+}
 .content-table thead tr {
   background-color: #FFFFFF;
   color: #000000;
@@ -70,4 +72,47 @@
   display: inline-block;
   margin: 2px 2px;
   border-radius: 50%;
+}
+@keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+.buttonactive {
+  background-color: #0000ff;
+  border: 1px solid black;
+  padding: 20px 25px;
+  display: inline-block;
+  margin: 2px 2px;
+  border-radius: 16px;
+  cursor: pointer;
+  animation: glowing 1500ms infinite;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.buttonnew {
+  position: absolute;
+}
+h1.headertekst {
+  text-align: center;
+}
+
+.btn{
+  padding:.7rem 3rem;
+  background:red;
+  color:#fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+}
+.data{
+  max-width:fit-content;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
